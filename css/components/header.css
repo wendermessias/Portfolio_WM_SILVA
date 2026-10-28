@@ -31,8 +31,7 @@ header .header__right .header__image::after {
   z-index: -1;
 }
 header .header__right .header__image .wender {
-  /* width: 272px; */
-  width: 304px;
+  width: 344px;
   height: auto;
   border-radius: 0.5rem;
   min-width: 25rem;
@@ -49,36 +48,40 @@ header .header__right .header__image .background {
   header {
     flex-direction: column-reverse;
     text-align: center;
+    gap: 3rem;
   }
-  header .header__right .header__image::after {
-    content: " ";
-    display: block;
-    width: 40%;
-    height: 94%;
-    border: 2px solid var(--tertiary-color);
-    position: absolute;
-    top: -0.4rem;
-    left: 26.5rem;
-    border-radius: 0.5rem;
-    z-index: -1;
+
+  header .header__right {
+    text-align: center;
   }
-  header .header__right .header__image .wender {
-    width: 304px;
-    height: auto;
-    border-radius: 0.5rem;
-    min-width: 25rem;
+
+  header .header__right .header__image {
+    display: inline-block;
     max-width: 100%;
   }
+
+  header .header__right .header__image::after {
+    width: 100%;
+    height: 100%;
+    top: -0.8rem;
+    left: 0.8rem;
+    right: auto;
+  }
+
+  header .header__right .header__image .wender {
+    display: block;
+    width: min(30rem, 100%);
+    height: auto;
+    min-width: 0;
+  }
+
   header .header__right .header__image .background {
-    position: absolute;
+    width: min(40vw, 17rem);
     top: -1rem;
-    right: 18.5rem;
-    z-index: -1;
+    right: -1.5rem;
   }
-  header .header__left P {
-    margin: 2rem auto 4rem;
-  }
-  header .header__left P {
-    margin: 2rem auto 4rem;
+
+  header .header__left p {
+    margin: 1.5rem auto 3rem;
   }
 }

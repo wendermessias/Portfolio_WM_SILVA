@@ -9,6 +9,7 @@ footer .footer__content {
 footer .footer__content .footer__contact span {
   display: block;
   font-weight: 500;
+  overflow-wrap: anywhere;
 }
 footer .footer__content ul li {
   display: inline-block;

@@ -25,7 +25,7 @@ a {
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 4.4rem;
   font-weight: 700;
   color: var(--primary-color);
 }
@@ -47,7 +47,7 @@ p,
 .p {
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 3.5rem;
+  line-height: 2.5rem;
 }
 
 p:not(:last-of-type),
@@ -111,16 +111,36 @@ p:not(:last-of-type),
 
 @media only screen and (max-width: 768px) {
   html {
-    font-size: 58%;
+    font-size: 62.5%;
+  }
+
+  body {
+    margin-top: 12rem;
   }
 
   .max-width {
     padding: 0 2rem;
+    margin-bottom: 8rem;
+  }
+
+  .max-width.mb-0 {
+    margin-bottom: 0;
   }
 }
 
 @media only screen and (max-width: 425px) {
   h1 {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
+    line-height: 1.2;
+  }
+
+  .secondary-title {
+    font-size: 2.8rem;
+    line-height: 1.25;
+  }
+
+  .tertiary-title {
+    font-size: 2.4rem;
+    line-height: 1.35;
   }
 }

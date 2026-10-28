@@ -16,6 +16,7 @@
   padding: 1rem 4rem; /* Reduzi o padding para não ficar gigante */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar .navbar__content .navbar__links li {
@@ -51,6 +52,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar .navbar__content {
+    padding: 0.8rem 2rem;
+  }
+
+  .navbar .navbar__content > a img {
+    width: 16rem;
+    height: auto;
+    margin-top: 0;
+  }
+
   .navbar .navbar__content .navbar__links {
     display: none;
   }

@@ -34,7 +34,12 @@
     max-width: 66rem;
     text-align: center;
   }
-    .about .about__right {
+
+  .about .about__left ul {
+    margin-left: 0;
+  }
+
+  .about .about__right {
     text-align: center;
   }
 }

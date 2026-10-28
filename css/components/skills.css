@@ -14,7 +14,7 @@
 
 .skills .skills__content ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -35,4 +35,11 @@
   font-size: 1.6rem;
   font-weight: 500;
   margin: 2rem 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skills .skills__content {
+    padding: 5rem 2rem;
+    margin-bottom: 0;
+  }
 }
